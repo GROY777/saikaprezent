@@ -437,7 +437,7 @@
 
             // Запускаем спавн сердечек
             spawnHeart();
-            spawnInterval = setInterval(spawnHeart, 1000);
+            spawnInterval = setInterval(spawnHeart, 500);
 
             // Запускаем игровой цикл
             gameLoop();
@@ -489,7 +489,7 @@
             hearts.push({
                 element: heart,
                 y: -80,
-                speed: 0.8 + Math.random() * 0.3 // 0.4-0.7
+                speed: 2.5 + Math.random() * 1.0 // 2.5-3.5
             });
         }
 
